@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script src="refresh.js"></script>
+<script>
+       $(document).ready(function() {
+    $('.btn-common').on('click', function() {
+        
+        var parent = $(this).closest('.option-group');
+       
+      
+
+       
+        var allButtons = parent.siblings().find('.btn-common');
+
+      
+        allButtons.toggle();
+        
+     
+        var nestedOptions = $(this).next();
+        nestedOptions.toggle(); 
+
+      
+        $(this).show();
+
+      
+    });});
+
+    document.querySelectorAll('.whitebtn').forEach(button => {
+    button.addEventListener('click', function () {
+        // Select all forms with the class 'flushform' and reset their inputs
+
+
+        
+       
+        document.getElementById('white').classList.add('hidden');
+        document.getElementById('black').classList.add('hidden');
+        document.getElementById('green').classList.add('hidden');
+        document.getElementById('red').classList.add('hidden');
+        document.getElementById('blue').classList.add('hidden');
+        document.getElementById('yellow').classList.add('hidden');
+        document.getElementById('result').classList.add('hidden');
+
+        
+
+     
+
+    });
+});
+</script>
+<style>
+    .mainoptions{
+        display: flex;
+    }
+
+    .mainoptions img{
+        width: 300px;
+    }
+    
+    .product-code{
+margin-top: 50px;
+    }
+ 
+</style>
+<body>
+    <div class="mainoptions">
+   <div class="colorsoptions">
+        <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="connectionwt">110/06</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-color="white" data-code="P2PLBT1LB(S)110/06">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-color="green" data-code="P2PLBT3LB110/06">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-color="red" data-code="P2PLBT4LB110/06">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-color="amber" data-code="P2PLBT5LB110/06">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-color="blue" data-code="P2PLBT7LB(S)110/06">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-color="yellow" data-code="P2PLBT8LB110/06">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" data-color="clear" data-code="P2PLBT7LB(S)110/06">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integraledwb">110/12</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" bdata-color="white" bdata-code="P2PLBT1LB(S)110/12">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" bdata-color="green" bdata-code="P2PLBT3LB110/12">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" bdata-color="red" bdata-code="P2PLBT4LB110/12">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" bdata-color="amber" bdata-code="P2PLBT5LB110/12">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" bdata-color="blue" bdata-code="P2PLBT7LB(S)110/12">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" bdata-color="yellow" bdata-code="P2PLBT8LB110/12">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" bdata-color="clear" bdata-code="P2PLBT7LB(S)110/12">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integralled">110/24</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" cdata-color="white" cdata-code="P2PLBT1LB(S)110/24">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" cdata-color="green" cdata-code="P2PLBT3LB110/24">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" cdata-color="red" cdata-code="P2PLBT4LB110/24">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" cdata-color="amber" cdata-code="P2PLBT5LB110/24">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" cdata-color="blue" cdata-code="P2PLBT7LB(S)110/24">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" cdata-color="yellow" cdata-code="P2PLBT8LB110/24">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" cdata-color="clear" cdata-code="P2PLBT7LB(S)110/24">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integrakledf">240/06</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" ddata-color="white" ddata-code="P2PLBT1LB(S)110/06">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" ddata-color="green" ddata-code="P2PLBT3LB110/06">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" ddata-color="red" ddata-code="P2PLBT4LB110/06">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" ddata-color="amber" ddata-code="P2PLBT5LB110/06">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" ddata-color="blue" ddata-code="P2PLBT7LB(S)110/06">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" ddata-color="yellow" ddata-code="P2PLBT8LB110/06">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" ddata-color="clear" ddata-code="P2PLBT7LB(S)110/06">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integralltl">240/12</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" edata-color="white" edata-code="P2PLBT1LB(S)110/12">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" edata-color="green" edata-code="P2PLBT3LB110/12">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" edata-color="red" edata-code="P2PLBT4LB110/12">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" edata-color="amber" edata-code="P2PLBT5LB110/12">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" edata-color="blue" edata-code="P2PLBT7LB(S)110/12">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" edata-color="yellow" edata-code="P2PLBT8LB110/12">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" edata-color="clear" edata-code="P2PLBT7LB(S)110/12">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+
+    <div class="option-group">
+        <button class="option-btn btn-common whitebtn" id="integrallu">240/24</button>
+        <div class="nested-options">
+            <!-- 1st colour -->
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" fdata-color="white" fdata-code="P2PLBT1LB(S)110/24">
+                    <div class="white-btn"></div> (P2AF1)
+                </button>                                                                           
+            </div>
+          
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" fdata-color="green" fdata-code="P2PLBT3LB110/24">
+                    <div class="green-btn"></div> (P2AF3)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" fdata-color="red" fdata-code="P2PLBT4LB110/24">
+                    <div class="red-btn"></div> (P2AF4)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" fdata-color="amber" fdata-code="P2PLBT5LB110/24">
+                    <div class="amber-btn"></div> (P2AF2)
+                </button>                                            
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" fdata-color="blue" fdata-code="P2PLBT7LB(S)110/24">
+                    <div class="blue-btn"></div> (P2AF6)
+                </button>
+            </div>
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" fdata-color="yellow" fdata-code="P2PLBT8LB110/24">
+                    <div class="yellow-btn"></div> (P2AF8)
+                </button>
+            </div>
+
+            <div class="option-group">
+                <button class="option-btn btn-common whitebtn" fdata-color="clear" fdata-code="P2PLBT7LB(S)110/24">
+                    <div class="clear-btn"></div> (P2AF8)
+                </button>
+            </div>
+         
+    </div>
+    </div>
+    
+
+
+   
+
+    
+</div>
+              
+
+<div class="output">
+
+    <!-- Result display section -->
+ <!-- Result display section -->
+ <div id="result" class="result hidden">
+  
+     <p id="generated-code"></p>
+     <div id="description" class="description hidden">
+         <h2 id="description-title"></h2>
+     </div>
+ </div>
+ 
+
+    
+ <div class="flushimg">
+    
+     <img src="flush/white.png" id="white" class="hidden" alt="White">
+     <img src="flush/black.png" id="black" class="hidden" alt="Black">
+     <img src="flush/green.png" id="green" class="hidden" alt="Green">
+     <img src="flush/red.png" id="red" class="hidden" alt="Red">
+     <img src="flush/blue.png" id="blue" class="hidden" alt="Blue">
+     <img src="flush/yellow.png" id="yellow" class="hidden" alt="Yellow">
+
+    </div>
+
+ 
+ 
+ <script>
+  
+  document.querySelectorAll('.option-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const color = this.getAttribute('data-color');
+            const productCode = this.getAttribute('data-code');
+
+            // Hide all images
+            document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+
+            // Show the selected image
+            const selectedImage = document.getElementById(color);
+            if (selectedImage) {
+                selectedImage.classList.remove('hidden');
+            }
+
+            // Display the product code
+            const productInfo = document.getElementById('generated-code');
+            productInfo.textContent = "Product Code: " + productCode;
+            document.getElementById("result").classList.remove("hidden"); // Make result visible
+        });
+    });
+ 
+ 
+// //  second
+// document.querySelectorAll('.option-btn').forEach(button => {
+//         button.addEventListener('click', function () {
+//             const color = this.getAttribute('bdata-color');
+//             const productCode = this.getAttribute('bdata-code');
+
+//             // Hide all images
+//             document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+
+//             // Show the selected image
+//             const selectedImage = document.getElementById(color);
+//             if (selectedImage) {
+//                 selectedImage.classList.remove('hidden');
+//             }
+
+//             // Display the product code
+//             const productInfo = document.getElementById('generated-code');
+//             productInfo.textContent = "Product Code: " + productCode;
+//             document.getElementById("result").classList.remove("hidden"); // Make result visible
+//         });
+//     });
+
+//     //  third
+// document.querySelectorAll('.option-btn').forEach(button => {
+//         button.addEventListener('click', function () {
+//             const color = this.getAttribute('cdata-color');
+//             const productCode = this.getAttribute('cdata-code');
+
+//             // Hide all images
+//             document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+
+//             // Show the selected image
+//             const selectedImage = document.getElementById(color);
+//             if (selectedImage) {
+//                 selectedImage.classList.remove('hidden');
+//             }
+
+//             // Display the product code
+//             const productInfo = document.getElementById('generated-code');
+//             productInfo.textContent = "Product Code: " + productCode;
+//             document.getElementById("result").classList.remove("hidden"); // Make result visible
+//         });
+//     });
+
+//     // fourth
+    
+// document.querySelectorAll('.option-btn').forEach(button => {
+//         button.addEventListener('click', function () {
+//             const color = this.getAttribute('ddata-color');
+//             const productCode = this.getAttribute('ddata-code');
+
+//             // Hide all images
+//             document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+
+//             // Show the selected image
+//             const selectedImage = document.getElementById(color);
+//             if (selectedImage) {
+//                 selectedImage.classList.remove('hidden');
+//             }
+
+//             // Display the product code
+//             const productInfo = document.getElementById('generated-code');
+//             productInfo.textContent = "Product Code: " + productCode;
+//             document.getElementById("result").classList.remove("hidden"); // Make result visible
+//         });
+//     });
+
+//         //fifth
+    
+// document.querySelectorAll('.option-btn').forEach(button => {
+//         button.addEventListener('click', function () {
+//             const color = this.getAttribute('edata-color');
+//             const productCode = this.getAttribute('edata-code');
+
+//             // Hide all images
+//             document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+
+//             // Show the selected image
+//             const selectedImage = document.getElementById(color);
+//             if (selectedImage) {
+//                 selectedImage.classList.remove('hidden');
+//             }
+
+//             // Display the product code
+//             const productInfo = document.getElementById('generated-code');
+//             productInfo.textContent = "Product Code: " + productCode;
+//             document.getElementById("result").classList.remove("hidden"); // Make result visible
+//         });
+//     });    
+//     // six
+    
+//     document.querySelectorAll('.option-btn').forEach(button => {
+//             button.addEventListener('click', function () {
+//                 const color = this.getAttribute('fdata-color');
+//                 const productCode = this.getAttribute('fdata-code');
+    
+//                 // Hide all images
+//                 document.querySelectorAll('.flushimg img').forEach(img => img.classList.add('hidden'));
+    
+//                 // Show the selected image
+//                 const selectedImage = document.getElementById(color);
+//                 if (selectedImage) {
+//                     selectedImage.classList.remove('hidden');
+//                 }
+    
+//                 // Display the product code
+//                 const productInfo = document.getElementById('generated-code');
+//                 productInfo.textContent = "Product Code: " + productCode;
+//                 document.getElementById("result").classList.remove("hidden"); // Make result visible
+//             });
+//         });  
+ 
+ </script>
+ 
+ 
+
+ </script>
+ </div>
+
+
+   
+     
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
